@@ -1,20 +1,43 @@
 # C19 Symptoms registration API
 
 ## Development
-```
-./start.sh
-```
+You need Python 3.6 or above.
 
-or
+Include current directory in your Python environment:
+`export PYTHONPATH=.`
 
+Start a local server on http://localhost:5000:
 ```
 virtualenv venv
 . venv/bin/activate
 pip3 install -r requirements.txt
-export FLASK_APP=regc19api
-export FLASK_DEBUG=1
-flask run -p 5000
+python3 run.py
 ```
+
+## Gunicorn
+Includes Gunicorn WSGI HTTP server for simple Heroku deployments.
+Start locally with:
+```
+virtualenv venv
+. venv/bin/activate
+pip3 install -r requirements.txt
+gunicorn run:app
+```
+
+## Push to Heroku from CLI
+You need an account on Heroku.
+
+Steps on Ubuntu:
+```
+sudo snap install heroku --classic
+heroku login
+cd path/to/regc19-api
+heroku create regc19-api
+git push heroku master
+```
+
+In GitHub you can setup automatic Heroku deploy using the Heroku GitHub integration.
+https://devcenter.heroku.com/articles/github-integration
 
 ## Usage
 
