@@ -1,1 +1,1 @@
-web: gunicorn rec19api:rec19api
+web: gunicorn regc19api:regc19api
