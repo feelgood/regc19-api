@@ -1,1 +1,1 @@
-web: gunicorn regc19api:regc19api
+web: gunicorn run:app
