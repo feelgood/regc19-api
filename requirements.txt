@@ -3,3 +3,4 @@ flask-cors
 pytest
 jsonschema
 flask-swagger-ui
+gunicorn
