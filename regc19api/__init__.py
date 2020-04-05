@@ -8,4 +8,4 @@ app = Flask(API_NAME)
 CORS(app)
 
 import regc19api.routes.common
-import regc19api.routes.registration
+import regc19api.routes.registrations
