@@ -4,3 +4,4 @@ pytest
 jsonschema
 flask-swagger-ui
 gunicorn
+redis

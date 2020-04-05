@@ -24,7 +24,15 @@ pip3 install -r requirements.txt
 gunicorn run:app
 ```
 
-## Push to Heroku from CLI
+## Heroku
+The local server can also be started with heroku
+```
+heroku local
+```
+This starts an instance on http://localhost:5000.
+
+
+### Push to Heroku from CLI
 You need an account on Heroku.
 
 Steps on Ubuntu:
